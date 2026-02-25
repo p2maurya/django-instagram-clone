@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/create/" class="create-btn">+ Create</a>
+        <div class="nav-container">
+            <div class="logo">Instagram</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/profile/">Profile</a>
+                <a href="/logout/">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
