@@ -1,17 +1,10 @@
 from pathlib import Path
 import os
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-    ...
-]
 
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-change-this-key'
 
@@ -19,6 +12,7 @@ SECRET_KEY = 'django-insecure-change-this-key'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 # Application definition
 
